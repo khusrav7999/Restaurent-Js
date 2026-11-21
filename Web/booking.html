@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Forel Restaurent</title>
+</head>
+<body class="body-booking">
+    <div class="head">
+      <img style="width: 160px;" src="img/favicon.png" alt="">
+   
+   
+      <ul class="ull1">  
+        <a href="./index.html"><li>Главная</li></a>
+        <a href="./about.html"><li>О нас</li></a>
+        <a href="./menu.html"><li>Меню</li></a>
+        <a href="./booking.html"><li>Бронирование</li></a>
+        <a href="./wedding.html"><li>Свадебный зал</li></a>
+        <a href="./contact.html"><li>Контакты</li></a>
+     </ul>
+     <button class="busket33" style="padding: 5px 0px;">
+      <select name="" id="" class="busket2" style="border-color: goldenrod;"> 
+          <div>  
+           <option value="Ru">русский</option>
+           <option value="Eng">Engish</option>
+           <option value="CN">中文</option>
+           <option value="TJ">тоҷикй</option>
+          </div>
+           </select></button>
+     <button class="busket3"> <a href="./busket.html"><i style="color: brown;" class="fa-solid fa-cart-shopping"></i></a></button>
+
+
+   
+<header>
+  <div class="burger" id="burgerBtn">
+      <i style="color: brown;" class="fa-solid fa-bars burger"></i>
+  </div>
+  
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="menu" id="menu">
+  <button class="but_lang" style="padding: 5px 0px;">
+    <select name="" id="" class="busket2" style="border-color: goldenrod;"> 
+      <i class="fa-solid fa-globe"></i>
+      <div>   
+        <option value="Ru">русский</option>
+        <option value="En">Engish</option>
+        <option value="ZH">中文</option>
+        <option value="TJ">тоҷикй</option>
+      </div>
+    </select></button>
+
+    
+  <a href="./index.html">Главная</a>
+  <a href="./about.html">О нас</a>
+  <a href="./menu.html">Меню</a>
+  <a href="./booking.html">Бронирование</a>
+  <a href="./wedding.html">Свадебный зал</a>
+  <a href="./contact.html">Контакты</a>
+  </nav>
+
+
+    </div>
+  </div>
+
+
+                                       
+                             <aside>
+                              <div  style="padding: 0px 16px; ">                                       
+                       <div  style="margin-top: 90px;" class="booking1 container">
+                        <div style="  padding: 24px 24px 32px;">
+                                 <span class="span">
+                                     <div class="icon-circle book"> 
+                                      <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-8 w-8 text-white"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                                    
+                                    </div>
+                                    <h1 class="out">Забронировать столик</h1>
+                                    <p class="out">Запольните форьму ниже, и мы свяжемся с вами для подверждения бронирования</p>        
+                                 </span>
+                                 </div>
+                            
+
+
+
+
+                          <div style="padding: 32px 32px 24px;">
+                            <form id="bookingForm">                 
+                                 <div class="row">
+                                  <div class="input-group">
+                                    <label for="bookingDate">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 text-amber-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                                  
+                                       Дата</label> 
+                                    <input type="date" name="date" id="bookingDate" required>
+                             </div>
+          
+                                  <div class="input-group">
+                                    <label for="bookingTime">
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 text-amber-600"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                      Время</label>
+ 
+
+                                    <select class="select2" name="time" id="bookingTime">                                                   <option value="09:00">09:00</option>
+                                      <option value="10:00">10:00</option>
+                                      <option value="11:00">11:00</option>
+                                      <option value="12:00">12:00</option>
+                                      <option value="13:00">13:00</option>
+                                      <option value="14:00">14:00</option>
+                                      <option value="15:00">15:00</option>
+                                      <option value="16:00">16:00</option>
+                                      <option value="17:00">17:00</option>
+                                      <option value="18:00">18:00</option>
+                                      <option value="19:00">19:00</option>
+                                      <option value="20:00">20:00</option>
+                                      <option value="21:00">21:00</option>
+                                      <option value="22:00">22:00</option>
+                                      <option value="23:00">23:00</option>
+                                     </select><br>
+                                    
+                                  </div>
+                               </div>
+
+                            <label for="time-select">
+                             
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-4 w-4 text-amber-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                              Количество гостей</label><br>
+                            <select class="select2" name="guests" id="time-select">
+                            <option value="1">1 человек</option>
+                            <option value="2">2 человек</option>
+                            <option value="3">3 человек</option>
+                            <option value="4">4 человек</option>
+                            <option value="5">5 человек</option>
+                            <option value="6">6 человек</option>
+                            <option value="7">7 человек</option>
+                            <option value="8">8 человек</option>
+                            <option value="9">9 человек</option>
+                            <option value="10">10 человек</option>
+                            <option value="11">11 человек</option>
+                            <option value="12">12 человек</option>
+                            <option value="13">13 человек</option>
+                            <option value="14">14 человек</option>
+                            <option value="15">15 человек</option>
+                            <option value="16">16 человек</option>
+                            <option value="17">17 человек</option>
+                            <option value="18">18 человек</option>
+                            <option value="19">19 человек</option>
+                            <option value="20">20 человек</option>
+                           </select> <br><br>
+                            
+                             <label for="bookingName">
+                            
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 text-amber-600"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                              ФИО</label><br>
+                             <input type="text" placeholder="Введите Ваше имя" name="bookingName" id="bookingName"><br><br>
+                           
+<label for="bookingPhone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 text-amber-600"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Номер телефона</label><br>
+                            <input type="tel" maxlength="13" value="+992" placeholder="" name="phone" id="bookingPhone"><br><br>
+
+
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square h-4 w-4 text-amber-600"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                              Ваши пожелания и особые требования</label><br>
+                              <input style=" height: 80px;" type="text"  placeholder="Любые особые пожелания или коментарии..." name="bookingComment" id="bookingComment"><br><br>
+                          
+                            <button class="golden_button2 out" type="submit">   <i class="fa-regular fa-paper-plane"></i>  Отправить Бронирование</button>
+                            <div  style="color: #4B5563;"class="hrr out"> Или позваните нам напрямую для быстрого бронирования:</div>
+                            <button class="golden_button2"> <i class="fa-solid fa-phone"></i>  +992 88 202 7777</button>
+                      
+                         </form>   </div> 
+
+
+
+
+        
+                      </div>
+                    </div>
+                      </aside> 
+
+
+                        <div class="container pad1">
+                          <div class=" card">
+                            <h1 style="margin-bottom: 50px;" class="out">Преимущество бронирования</h1>
+
+                           
+                            <div style="background-color: #fff;" class="card2 out">
+                              <div class="clickable-card">
+                                <div class="icon-circle">
+                                  <svg class="gold-icon" viewBox="0 0 24 24" fill="none" xmlns="fa-solid fa-building">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-8 w-8 text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                  </svg>
+                                </div>
+                      
+                                <h3 class="out">Гарантированное место</h3>
+                                <p>Ваш столик будеть забронирован и ждать вас</p>
+                              </div>
+                      
+                      
+                              <div class="clickable-card">
+                                <div class="icon-circle">
+                                  <svg class="gold-icon" viewBox="0 0 24 24" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-8 w-8 text-white"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    
+                                  </svg>
+                                </div>
+                                <h3 class="out">Экономия времени</h3>
+                                <p>Не нужно стоять в очереди, приходите в назначенное время</p>  
+                              </div>
+                      
+                         
+                              <div class="clickable-card">
+                                <div class="icon-circle">
+                                  <svg class="gold-icon" viewBox="0 0 24 24" fill="none">
+                                        
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-8 w-8 text-white"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                                  </svg>
+                                </div>
+                                <h3 class="out">Быстрое подверждения</h3>
+                                <p>Мы свяжемся с вами в течение 15 минут для подверждения</p>
+                              </div>
+                      
+                      
+                            </div>
+                          </div>
+                        </div>
+                       
+
+
+
+   <script src="index.js" ></script>                
+
+     
+         <footer class="displa">
+            <div class="container">
+            <div class="display1" style="margin: 0px 0px 32px;">
+              <img style="width: 240px; height: 160px;" src="img/favicon.png" alt="">
+        
+              <ul class="ull">  
+                <h2 style="padding-bottom: 10px;">Быстрие ссылки</h2>
+                <a href="./index.html"><li>Главная</li></a>
+                <a href="./about.html"><li>О нас</li></a>
+                <a href="./menu.html"><li>Меню</li></a>
+                <a href="./booking.html"><li>Бронирование</li></a>
+                <a href="./wedding.html"><li>Свадебный зал</li></a>
+                <a href="./contact.html" class="ct"><li>Контакты</li></a>
+             </ul>
+        
+            <div class="link">
+              <ul>
+                <h2 style="padding-bottom: 10px;">Свяжетесь с нами</h2>
+                <li>  <i class="fa-solid fa-location-dot"></i> г.Худжанд, улица Сырдаринская б/н</p>
+                <li><i class="fa-solid fa-phone"></i> Доставка: 111 30 7777</li>
+                <li style="margin-left: 23px;">  Бронирование: 88 202 7777</li>
+                <li><i class="fa-solid fa-envelope"></i> info@forelrestaurent.com</li>
+                <li> <i class="fa-regular fa-clock"></i> Ежедевно с 09:00 до 23:00</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="hr container out2">
+            <p style="padding: 32px 0px 0px; color: #9CA3AF;">© 2026 Ресторан Форель. Все права защищены</p>
+          </div>
+        </div>
+          </footer>
+        
+          
+                      </body>
+                      </html>
