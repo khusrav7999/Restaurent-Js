@@ -151,14 +151,16 @@
                             <option value="20">20 человек</option>
                            </select> <br><br>
                             
-                             <label for="bookingName">
+                             <label type="text" for="bookingName">
                             
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 text-amber-600"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                               ФИО</label><br>
-                             <input type="text" placeholder="Введите Ваше имя" name="bookingName" id="bookingName"><br><br>
+
+                             <input type="text" placeholder="Введите Ваше имя" name="bookingName" id="name"><br><br>
                            
-<label for="bookingPhone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 text-amber-600"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Номер телефона</label><br>
-                            <input type="tel" maxlength="13" value="+992" placeholder="" name="phone" id="bookingPhone"><br><br>
+<label for="bookingPhone">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 text-amber-600"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Номер телефона</label><br>
+                            <input type="tel" maxlength="13" value="+992" placeholder="" name="phone" id="phone"><br><br>
 
 
 
@@ -167,10 +169,11 @@
                               <input style=" height: 80px;" type="text"  placeholder="Любые особые пожелания или коментарии..." name="bookingComment" id="bookingComment"><br><br>
                           
                             <button class="golden_button2 out" type="submit">   <i class="fa-regular fa-paper-plane"></i>  Отправить Бронирование</button>
+                          
                             <div  style="color: #4B5563;"class="hrr out"> Или позваните нам напрямую для быстрого бронирования:</div>
-                            <button class="golden_button2"> <i class="fa-solid fa-phone"></i>  +992 88 202 7777</button>
-                      
-                         </form>   </div> 
+                      <button type="button" class="golden_button2"> <i class="fa-solid fa-phone"></i> <a href="tel:+992882027777">+992 88 202 7777</a></button>
+                </form>   
+              </div> 
 
 
 

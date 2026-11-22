@@ -45,8 +45,8 @@ if (bookingForm) {
         );
 
         const bookingData = {
-            name: document.getElementById("bookingName").value.trim(),
-            phone: document.getElementById("bookingPhone").value.trim(),
+            name: document.getElementById("name").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
             date: bookingDate.value,
             time: document.getElementById("bookingTime").value,
             guests: Number(document.getElementById("time-select").value),
@@ -55,10 +55,10 @@ if (bookingForm) {
             createdAt: new Date().toISOString()
         };
 
-        if (!/^\+992\d{9}$/.test(bookingData.phone)) {
-            alert("Введите правильный номер телефона: +992XXXXXXXXX");
-            return;
-        }
+        // if (!/^\+992\d{9}$/.test(bookingData.phone)) {
+        //     alert("Введите правильный номер телефона: +992XXXXXXXXX");
+        //     return;
+        // }
 
         if (!bookingData.name || !bookingData.date || !bookingData.time) {
             alert("Пожалуйста, заполните все обязательные поля.");
@@ -102,12 +102,40 @@ if (bookingForm) {
 
 
 
+const nameInput = document.querySelector("#name");
+nameInput.addEventListener("input", () => {
+    nameInput.value = nameInput.value.replace(/[^a-zA-Zа-яА-ЯёЁ\s]/g, "");
+});
+
+
+
+
+const phoneInput = document.querySelector("#phone");
+phoneInput.addEventListener("input", () => {
+    let number = phoneInput.value.replace(/\D/g, "");
+    number = number.replace(/^992/, "");
+    phoneInput.value = "+992" + number.slice(0, 9);
+});
+
+phoneInput.addEventListener("focus", () => {
+    if (phoneInput.value === "") {
+        phoneInput.value = "+992";
+    }
+});
 
 
 
 
 
 
+
+
+
+
+const weddingBudget = document.querySelector("#weddingBudget");
+weddingBudget.addEventListener("input", () => {
+    weddingBudget.value = weddingBudget.value.replace(/\D/g, "");
+});
 
 
 
@@ -140,8 +168,8 @@ if (weddingForm) {
 
         const button = document.getElementById("weddingSubmit");
         const data = {
-            name: document.getElementById("weddingName").value.trim(),
-            phone: document.getElementById("weddingPhone").value.trim(),
+            name: document.getElementById("name").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
             date: dateInput.value,
             guests: Number(
                 document.getElementById("weddingGuests").value
@@ -151,11 +179,10 @@ if (weddingForm) {
             status: "Новая заявка",
             createdAt: new Date().toISOString()
         };
-
-        if (!/^\+992\d{9}$/.test(data.phone)) {
-            alert("Введите правильный номер телефона: +992XXXXXXXXX");
-            return;
-        }
+     if (!data.name || !data.phone || !data.date || !data.time) {
+       alert("Пожалуйста, заполните все поля!");
+       return;
+      }  
 
         if (data.guests < 1 || data.guests > 200) {
             alert("Количество гостей должно быть от 1 до 200.");
@@ -195,6 +222,17 @@ if (weddingForm) {
         }
     });
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
